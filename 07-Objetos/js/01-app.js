@@ -1,3 +1,5 @@
+// Leccion 35. Crear Objetos en JavaScript
+
 const nombre = 'Monitor 20 pulgadas';
 const precio = 200;
 const disponible = true;
