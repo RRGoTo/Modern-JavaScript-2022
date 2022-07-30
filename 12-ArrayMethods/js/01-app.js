@@ -1,3 +1,4 @@
+// 88. .some
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
 
 const carrito = [
@@ -8,3 +9,20 @@ const carrito = [
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
 ]
+/**
+ * * includes -> Comprueba si un valor existe en un array, no funciona con arrays de objetos
+ * * some -> Es lo mismo que includes pero para arrays de objetos
+ */
+const result = meses.includes('Enero');
+console.log(result);
+
+// Ahora utilizamos el .some
+const exist = carrito.some((product)=>{
+    return product.nombre === 'Tablet';
+});
+
+console.log(exist);
+
+// array tradicional
+const exist2 = meses.some(mes => mes === 'Febrero');
+console.log(exist2);
